@@ -27938,7 +27938,7 @@ void main() {
       this.data_pdb = "";
     }
     async init() {
-      const source_sdf = "tp_resources/ligandokreado/1iep/2025-06-18T20:31:41.325Z/pose.sdf";
+      const source_sdf = "https://storage.googleapis.com/tp_resources/ligandokreado/1iep/2025-06-18T20%3A31%3A41.325Z/pose.sdf";
       this.data_sdf = await fetchData(source_sdf);
       const { atoms, bonds } = parseSDF(this.data_sdf);
       const center = new Vector3();
@@ -27961,7 +27961,7 @@ void main() {
     }
     getColorForElement(element) {
       const colors = {
-        H: "yellow",
+        H: "black",
         C: "gray",
         N: "blue",
         O: "red",
