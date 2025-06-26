@@ -1,4 +1,3 @@
-"use strict";
 var ExportedSceneBundle = (() => {
   // ../../node_modules/three/build/three.core.js
   var REVISION = "177";
@@ -27932,10 +27931,10 @@ void main() {
 
   // Ligand.ts
   var Ligand = class extends XRWorld {
+    data_sdf = "";
+    data_pdb = "";
     constructor(container) {
       super(container, "atom", "yellow");
-      this.data_sdf = "";
-      this.data_pdb = "";
     }
     async init() {
       const source_sdf = `https://storage.googleapis.com/tp_resources/ligandokreado/1iep/2025-06-18T20:31:41.325Z/pose.sdf?cacheBust=${Date.now()}`;
@@ -27961,7 +27960,7 @@ void main() {
     }
     getColorForElement(element) {
       const colors = {
-        H: "black",
+        H: "purple",
         C: "gray",
         N: "blue",
         O: "red",
