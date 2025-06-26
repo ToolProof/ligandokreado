@@ -46,7 +46,7 @@ class Ligand extends XRWorld {
 
     private getColorForElement(element: string): string {
         const colors: Record<string, string> = {
-            H: 'purple', C: 'gray', N: 'blue', O: 'red', F: 'green',
+            H: 'darkred', C: 'gray', N: 'blue', O: 'red', F: 'green',
             CL: 'green', BR: 'brown', I: 'purple', P: 'orange',
             S: 'yellow', FE: 'darkred', default: 'black',
         };
