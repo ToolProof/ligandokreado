@@ -27960,7 +27960,7 @@ void main() {
     }
     getColorForElement(element) {
       const colors = {
-        H: "purple",
+        H: "darkred",
         C: "gray",
         N: "blue",
         O: "red",
