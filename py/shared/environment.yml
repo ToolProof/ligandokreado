@@ -1,0 +1,9 @@
+name: shared_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - google-cloud-storage
+      - python-dotenv

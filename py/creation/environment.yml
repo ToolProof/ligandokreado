@@ -1,0 +1,10 @@
+name: creation_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - langchain=0.3.26
+  - langchain-openai
+  - pip
+  - pip:
+      - flask>=2.3.0

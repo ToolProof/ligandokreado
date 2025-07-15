@@ -1,0 +1,10 @@
+{
+    "node_version": "20",
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "ligandokreado": "./src/ligandokreado.ts:graph"
+    },
+    "env": ".env"
+}
