@@ -72,7 +72,7 @@ const stateGraph = new StateGraph(GraphStateAnnotationRoot)
         new NodeHigh({
             inputs: ['candidate', 'target', 'box'],
             outputDir: 'candidate', // ATTENTION: indicates same directory as candidate
-            interMorphism: () => 'https://service-autodock-384484325421.europe-west2.run.app/autodock_basic',
+            interMorphism: () => 'https://docking-with-autodock-384484325421.europe-west2.run.app/autodock_basic',
         })
     )
     .addNode(
