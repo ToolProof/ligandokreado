@@ -32,3 +32,5 @@ next-env.d.ts
 .vscode/
 
 toolproof-563fe-556dd7e1ea79.json
+venv
+__pycache__

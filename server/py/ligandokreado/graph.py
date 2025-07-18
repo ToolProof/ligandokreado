@@ -5,20 +5,20 @@ This module contains the Python equivalent of the TypeScript LangGraph definitio
 """
 
 from typing import Literal
-from langgraph import StateGraph, START, END
+from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage
 
-from .types import (
+from ligandokreado.types import (
     ResourceItem, ResourceMap, DryModeManager,
     NodeDownConfig, NodeDownUnit, NodeLowConfig, NodeUpConfig,
     NodeUpUnit, NodeHighConfig
 )
 
-from updohilo.py.src.nodes.node_down import NodeDown
-from updohilo.py.src.nodes.node_low import NodeLow
-from updohilo.py.src.nodes.node_up import NodeUp
-from updohilo.py.src.nodes.node_high import NodeHigh
-from updohilo.py.src.types import GraphState
+from nodes.node_down import NodeDown
+from nodes.node_low import NodeLow
+from nodes.node_up import NodeUp
+from nodes.node_high import NodeHigh
+from types import GraphState
 
 from .registries import intra_morphism_registry, inter_morphism_registry
 

@@ -20,10 +20,13 @@ export async function runRemoteGraph() {
     try {
         // Create a thread (or use an existing thread instead)
         const thread = await client.threads.create();
+        console.log('thread :', thread);
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 1800000); // 30 minutes
+        console.log('timeout :', timeout);
 
         const prefix = 'ligandokreado/1iep/';
+        console.log('prefix :', prefix);
 
         const resourceMap: ResourceMap = {
             anchor: {

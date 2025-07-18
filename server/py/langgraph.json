@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "ligandokreado": "./ligandokreado/graph.py:create_graph"
+    },
+    "env": ".env"
+}
